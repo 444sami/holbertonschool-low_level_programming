@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - no comment
+ * main - no comments
  *
  * Return: 0
  */
-int main(void);
+int main(void)
 {
 	char chars;
 
