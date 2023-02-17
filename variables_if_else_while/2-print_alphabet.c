@@ -11,7 +11,7 @@ int main(void)
 	for (chars = 97; chars <= 122; chars++)	/** ASCII 97 = a, 122 = z*/
 	{
 		putchar(chars);
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
