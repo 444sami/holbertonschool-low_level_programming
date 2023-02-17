@@ -1,7 +1,7 @@
 <h1 align="center">C - Functions, nested loops project</h1>
 
 <h2 align="center">Learning Objectives</h2>
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+<h3>At the end of this project, you are expected to be able to explain to anyone, without the help of Google:</h3>
 
 →What are nested loops and how to use them
 
