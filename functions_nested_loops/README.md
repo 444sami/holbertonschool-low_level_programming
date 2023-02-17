@@ -1,6 +1,6 @@
-C - Functions, nested loops project
+<h1 align="center">C - Functions, nested loops project</h1>
 
-Learning Objectives
+<h2 align="center">Learning Objectives</h2>
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 What are nested loops and how to use them
