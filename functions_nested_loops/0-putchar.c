@@ -1,5 +1,18 @@
 #include "main.h"
 /**
- * main - no comment
+ * main - prints the string '_putchar'
+ *
  * Return: 0
  */
+int main(void)
+{
+	char *str = "_putchar";
+
+	while (*str) /** mientras *str exista */
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
+	return (0);
+}
