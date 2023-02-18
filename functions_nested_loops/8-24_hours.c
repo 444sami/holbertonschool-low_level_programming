@@ -12,7 +12,7 @@ void jack_bauer(void)
 		{
 			_putchar((hou / 10) + '0');	/**first digit of hour*/
 			_putchar((hou % 10) + '0');	/**second digir of hour*/
-			_putchar(':');			
+			_putchar(':');
 			_putchar((min / 10) + '0');	/**first digit of minute*/
 			_putchar((min % 10) + '0');	/**secod digit of minute*/
 			_putchar('\n');
