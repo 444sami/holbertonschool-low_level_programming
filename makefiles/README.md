@@ -18,8 +18,8 @@ NAME = school	 **Name of executable**<br>
 %.o: %.c m.h<br>
 $(CC) -c -o $@ $<<br>
 
-all: $(OBJ) **All rule should recompile only updated source files**<br>
-$(CC) $(OBJ) -o $(NAME)<br>
+all: $$(OBJ) **All rule should recompile only updated source files**<br>
+$$(CC) $$(OBJ) -o $$(NAME)<br>
 
 
 <h2>Task 3-Makefile:</h2>
