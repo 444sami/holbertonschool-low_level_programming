@@ -1,6 +1,6 @@
 <h2>Task 0-Makefile:</h2>
 all:	**Rules**<br>
-gcc main.c school.c -o school	_**Name of the executable: school**_<br>
+gcc main.c school.c -o school	***Name of the executable: school***<br>
 
 
 <h2>Task 1-Makefile:</h2>
