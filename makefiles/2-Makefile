@@ -1,0 +1,10 @@
+CC=gcc				/* compiler to be used */
+SRC= main.c school.c		/* .c files */
+OBJ= $(SRC:%.c=%.o)		/* .o files, los archivos .c de SRC -> .o */
+NAME= school			/* name of the executable */
+%.o: %.c m.h
+	$(CC) -c -o $@ $<
+
+all: $(OBJ) 			/*all rule recompile only updated source files */
+	$(CC) $(OBJ) -o $(NAME)
+
