@@ -1,59 +1,59 @@
-Task 0-Makefile:
-all:					/* rules */
-	gcc main.c school.c -o school	/* name of the executable: school */
+<h2>Task 0-Makefile:</h2>
+all:	* Rules
+gcc main.c school.c -o school	* Name of the executable: school
 
 
-Task 1-Makefile:
-CC = gcc			/* CC variable compiler to be used */
-SRC = main.c school.c		/* SRC variable object files */
-all:				/* rules */
-	$(CC) $(SRC) -o school	/* name of executable: school */
+<h2>Task 1-Makefile:</h2>
+CC = gcc			* CC variable compiler to be used
+SRC = main.c school.c		* SRC variable .o files
+all:
+$(CC) $(SRC) -o school		* Name of executable: school
 
 
-Task 2-Makefile:
-CC = gcc			/* compiler to be used */
-SRC = main.c school.c		/* .c files */
-OBJ = $(SRC:%.c=%.o)		/* .o files, .c -> .o */
-NAME = school			/* school name of executable */
+<h2>Task 2-Makefile:</h2>
+CC = gcc			* Compiler to be used
+SRC = main.c school.c		* .c files
+OBJ = $(SRC:%.c=%.o)		* .o files, .c -> .o
+NAME = school			* Name of executable
 %.o: %.c m.h
-	$(CC) -c -o $@ $<
+$(CC) -c -o $@ $<
 
-all: $(OBJ)			/* all rule should recompile only updated source files */
-	$(CC) $(OBJ) -o $(NAME)
+all: $(OBJ)			* All rule should recompile only updated source files
+$(CC) $(OBJ) -o $(NAME)
 
 
-Task 3-Makefile:
+<h2>Task 3-Makefile:</h2>
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
-RM = rm -f			/* program to delete files */
+RM = rm -f			* RM Program to delete files
 %.o:%.c m.h
-	$(CC) -c -o $@ $<
+$(CC) -c -o $@ $<
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)	/* build executable */
+$(CC) $(OBJ) -o $(NAME)		* Build executable
 clean:
-	$(RM) *~ $(NAME)	/* rule deletes emacs and vim temporary files and executable*/
+$(RM) *~ $(NAME)		* Rule deletes emacs and vim temporary files and executable
 oclean: 
-	$(RM) $(OBJ)		/* rule deletes object files */
-fclean: clean oclean		/* deletes emacs and vim files, executable and obj files */
-re: oclean all			/* forces recompilation */
+$(RM) $(OBJ)			* Rule deletes object files
+fclean: clean oclean		* Deletes emacs and vim files, executable and obj files
+re: oclean all			* Forces recompilation
 
 
-Task 4-Makefile:
+<h2>Task 4-Makefile:</h2>
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
 RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic	/* compiler flags */
+CFLAGS = -Wall -Werror -Wextra -pedantic	* Compiler flags
 %.o:%.c m.h
-	$(CC) $(CFLAGS) -c -o $@ $<
+$(CC) $(CFLAGS) -c -o $@ $<
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+$(CC) $(OBJ) -o $(NAME)
 clean: 
-	$(RM) *~ $(NAME)
+$(RM) *~ $(NAME)
 oclean: 
-	$(RM) $(OBJ)
+$(RM) $(OBJ)
 fclean: clean oclean
 re: oclean all
