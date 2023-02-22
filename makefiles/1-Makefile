@@ -1,5 +1,4 @@
-CC = gcc			/* compiler to be used */
-SRC = main.c school.c		/* .c files */
-all:				/* rules */
-	$(CC) $(SRC) -o school	/* name of the executable: school */
-				/* variables: CC, SRC */
+CC = gcc
+SRC = main.c school.c
+all:
+	$(CC) $(SRC) -o school

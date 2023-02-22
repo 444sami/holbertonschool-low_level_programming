@@ -1,2 +1,2 @@
-all: /* rules */
-	gcc main.c school.c -o school /* name of executable: school */
+all:
+	gcc main.c school.c -o school
