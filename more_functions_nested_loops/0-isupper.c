@@ -6,7 +6,7 @@
  */
 int _isupper(int c)
 {
-	if (c >= 65 && <= 90)	/*ASCII 65 = A, 90 = Z*/
+	if (c >= 65 && c <= 90)	/*ASCII 65 = A, 90 = Z*/
 	{			/* if uppercase, return 1*/
 		return (1);
 	}
