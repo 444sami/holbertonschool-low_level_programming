@@ -1,3 +1,21 @@
+<h1 align=center>C - Makefiles project</h1>
+<h2 align=center>Learning Objectives</h2>
+<h3>At the end of this project, you are expected to be able to explain to anyone, without the help of Google:</h3>
+
+→What are make, Makefiles
+
+→When, why and how to use Makefiles
+
+→What are rules and how to set and use them
+
+→What are explicit and implicit rules
+
+→What are the most common / useful rules
+
+→What are variables and how to set and use them
+
+<details>
+<summary align=center>Tasks notes</summary>
 <h2>Task 0-Makefile:</h2>
 all: <b class="term">*Rules</b><br>
 gcc main.c school.c -o school	<b class="term">*Name of the executable: school</b><br>
@@ -57,3 +75,4 @@ oclean:<br>
 $(RM) $(OBJ)<br>
 fclean: clean oclean<br>
 re: oclean all<br>
+</details>
