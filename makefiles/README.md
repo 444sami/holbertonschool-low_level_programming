@@ -1,59 +1,59 @@
-Task 0-Makefile:
-all:					/* rules */
-	gcc main.c school.c -o school	/* name of the executable: school */
+<h2>Task 0-Makefile:</h2>
+all: <b class="term">*Rules</b><br>
+gcc main.c school.c -o school	<b class="term">*Name of the executable: school</b><br>
 
 
-Task 1-Makefile:
-CC = gcc			/* CC variable compiler to be used */
-SRC = main.c school.c		/* SRC variable object files */
-all:				/* rules */
-	$(CC) $(SRC) -o school	/* name of executable: school */
+<h2>Task 1-Makefile:</h2>
+CC = gcc <b class="term">*CC variable compiler to be used</b><br>
+SRC = main.c school.c<b class="term"> *SRC variable .o files</b><br>
+all:<br>
+$(CC) $(SRC) -o school <b class="term">*Name of executable: school</b><br>
 
 
-Task 2-Makefile:
-CC = gcc			/* compiler to be used */
-SRC = main.c school.c		/* .c files */
-OBJ = $(SRC:%.c=%.o)		/* .o files, .c -> .o */
-NAME = school			/* school name of executable */
-%.o: %.c m.h
-	$(CC) -c -o $@ $<
+<h2>Task 2-Makefile:</h2>
+CC = gcc<br>
+SRC = main.c school.c <b class="term">*.c files</b><br>
+OBJ = $(SRC:%.c=%.o) <b class="term">*.o files, .c -> .o</b><br>
+NAME = school <b class="term">*Name of executable</b><br>
+%.o: %.c m.h<br>
+$(CC) -c -o $@ $<<br>
 
-all: $(OBJ)			/* all rule should recompile only updated source files */
-	$(CC) $(OBJ) -o $(NAME)
-
-
-Task 3-Makefile:
-CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:%.c=%.o)
-NAME = school
-RM = rm -f			/* program to delete files */
-%.o:%.c m.h
-	$(CC) -c -o $@ $<
-all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)	/* build executable */
-clean:
-	$(RM) *~ $(NAME)	/* rule deletes emacs and vim temporary files and executable*/
-oclean: 
-	$(RM) $(OBJ)		/* rule deletes object files */
-fclean: clean oclean		/* deletes emacs and vim files, executable and obj files */
-re: oclean all			/* forces recompilation */
+all: $(OBJ) <b class="term">*All rule should recompile only updated source files</b><br>
+$(CC) $(OBJ) -o $$(NAME)<br>
 
 
-Task 4-Makefile:
-CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:%.c=%.o)
-NAME = school
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic	/* compiler flags */
-%.o:%.c m.h
-	$(CC) $(CFLAGS) -c -o $@ $<
-all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-clean: 
-	$(RM) *~ $(NAME)
-oclean: 
-	$(RM) $(OBJ)
-fclean: clean oclean
-re: oclean all
+<h2>Task 3-Makefile:</h2>
+CC = gcc<br>
+SRC = main.c school.c<br>
+OBJ = $(SRC:%.c=%.o)<br>
+NAME = school<br>
+RM = rm -f <b class="term">*RM Program to delete files</b><br>
+%.o:%.c m.h<br>
+$(CC) -c -o $@ $<<br>
+all: $(OBJ)<br>
+$(CC) $(OBJ) -o $(NAME) <b class="term">*Build executable</b><br>
+clean:<br>
+$(RM) *~ $(NAME) <b class="term">*Rule deletes emacs and vim temporary files and executable</b><br>
+oclean:<br>
+$(RM) $(OBJ) <b class="term">*Rule deletes object files</b><br>
+fclean: clean oclean <b class="term">*Deletes emacs and vim files, executable and obj files</b><br>
+re: oclean all <b class="term">*Forces recompilation</b><br>
+
+
+<h2>Task 4-Makefile:</h2>
+CC = gcc<br>
+SRC = main.c school.c<br>
+OBJ = $(SRC:%.c=%.o)<br>
+NAME = school<br>
+RM = rm -f<br>
+CFLAGS = -Wall -Werror -Wextra -pedantic <b class="term">*Compiler flags</b><br>
+%.o:%.c m.h<br>
+$(CC) $(CFLAGS) -c -o $@ $< <br>
+all: $(OBJ)<br>
+$(CC) $(OBJ) -o $(NAME)<br>
+clean:<br>
+$(RM) *~ $(NAME)<br>
+oclean:<br>
+$(RM) $(OBJ)<br>
+fclean: clean oclean<br>
+re: oclean all<br>
