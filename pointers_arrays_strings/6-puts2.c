@@ -15,7 +15,7 @@ void puts2(char *str)
 		}
 		else
 		{
-			continue	/* si no uso 'continue' el loop se romperá */
+			continue;	/* si no uso 'continue' el loop se romperá */
 		}			/* llegará a printear 2 y al ser múltiplo */
 	}				/* no seguirá printeando 4, 6, 8..*/
 	_putchar(10);
