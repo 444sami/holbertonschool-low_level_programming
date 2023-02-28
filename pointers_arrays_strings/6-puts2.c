@@ -17,5 +17,6 @@ void puts2(char *str)
 		{
 			continue;	/* si no uso 'continue' el loop se romperá */
 		}
+	}
 	_putchar(10);
 }
