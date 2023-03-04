@@ -5,7 +5,7 @@
  * @src: source
  * Return: concatenated string
  */
-char *strcat(char *dest, char *source)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
