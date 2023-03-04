@@ -7,9 +7,9 @@
 char *leet(char *str)
 {
 	int i = 0;
-	int n = 0;
 	char s2[5] = {'a', 'e', 'o', 't', 'l'};
 	char s3[5] = {'4', '3', '0', '7', '1'};
+	int n = 0;	
 
 	for (; str[i] != '\0'; i++)
 	{
