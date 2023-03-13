@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - adss positive numbers
  * @argc: arg counter
@@ -7,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num, dig;
+	int dig, num;
 	int sum = 0;
 
 	for (num = 1; num < argc; num++)

@@ -17,6 +17,6 @@ void print_alphabet_x10(void)
 			_putchar(chars);
 		}
 		time++;
-		_putchar(10);
+		_putchar(10); /** ascii code for \n = 10 */
 	}
 }
