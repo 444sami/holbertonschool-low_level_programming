@@ -23,7 +23,7 @@ En la <b>memoria principal</b> están las variables <b>ESTÁTICAS, variables glo
 
 En el <b>Heap</b> (memoria libre) <b>se almacena memoria dinámica</b> que se utiliza para guardar datos que se crean en el medio de la ejecución de un programa. Aquí podemos <b>asignar, reasignar y liberar espacios de memoria</b> de forma DINÁMICA.
 
-En el Stack se almacenan las variables locales que aparecen y desaparecen en un momento puntual de la ejecución del programa.
+En el <b>Stack se almacenan las variables locales</b> que aparecen y desaparecen en un momento puntual de la ejecución del programa.
 
 * Las variables locales comienzan su existencia cuando la función es llamada y desaparecen cuando la función termina su ejecución, por esta razón se conocen como variables AUTOMÁTICAS.
 
