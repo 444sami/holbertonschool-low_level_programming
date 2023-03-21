@@ -17,7 +17,7 @@
 
 En la <b>memoria principal</b> están las variables <b>ESTÁTICAS, variables globales y el código ejecutable del programa.</b> Ó sea, todos aquellos datos que están presentes desde el comienzo del programa hasta que termina.
 
-* Las variables estáticas preservan su valor durante todo el programa. Al salir de una función, éstas mantienen su valor para que cuando se vuelva a llamar a dicha función se pueda acceder al valor que tenía antes de salir (en lugar de ser nuevamente inicializada como ocurriría con una variable local).
+* Las variables estáticas preservan su valor durante todo el programa: al salir de una función, éstas mantienen su valor para que cuando se vuelva a llamar a dicha función se pueda acceder al valor que tenía antes de salir (en lugar de ser nuevamente inicializada como ocurriría con una variable local).
 
 * Las variables globales son declaradas en la cabecera del programa, antes de la declaración de funciones y antes del método main. Decimos que son variables globales porque estas variables son conocidas por todas las funciones en el programa.
 
