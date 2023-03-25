@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	operador = argv[2][0];
 
 	f = get_op_func(argv[2]);
-	
+
 	if (!f || argv[2][1] != '\0')
 	{
 		printf("Error\n");	/* si el operador no es ninguno de */
