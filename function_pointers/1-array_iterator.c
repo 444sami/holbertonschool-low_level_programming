@@ -12,15 +12,15 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
 
-	if (action)
+	if (action) /* si action existe */
 	{
 		if (array)
 		{
-			for (i = 0; i < size; i++)
+			for (i = 0; i < size; i++) /* i recorre array */
 			{
-				(action)(*array);
-				array++;
-			}
+				(action)(*array); /* ejecuta la función action dada como */
+				array++;	/* parámetro en cada elemento del array */
+			}			/* hasta llegar a size (final del array) */
 		}
 	}
 }
