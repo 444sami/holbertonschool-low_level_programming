@@ -11,14 +11,13 @@
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {	/* matriz con operadores */
-	{"+", op_add}	/* y funciones correspondientes */
+	{"+", op_add},	/* y funciones correspondientes */
 	{"-", op_sub},
 	{"*", op_mul},
 	{"/", op_div},
 	{"%", op_mod},
 	{NULL, NULL}
 	};
-
 	int i = 0; /* variable iteradora */
 
 	while (ops[i].op != NULL && *(ops[i].op) != *s) /* mientras i no sea nulo */
