@@ -45,6 +45,6 @@ void print_all(const char * const format, ...)
 					j++; }
 			if (format[i + 1] != '\0' && j > 0)
 				printf(", ");
-				i++; } }
+			i++; } }
 	printf("\n");
 	va_end(args); }
