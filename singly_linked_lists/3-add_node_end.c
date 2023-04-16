@@ -17,11 +17,13 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new;
 	}
 	else
+	{
 		for (; aux->next; i++)
 		{
 			aux = aux->next;
 		}
 		aux->next = new;
+	}
 	return (new);
 }
 /**
