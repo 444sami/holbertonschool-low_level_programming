@@ -7,15 +7,26 @@
 void rev_string(char *s)
 {
 	int c, i, j, temp;
+	
+	c = _strlen(s);
 
-	while (s[c] != NULL)
-	{
-		c++;
-	}
 	for (i = 0, j = c - 1; i < j; i++, j--)
 	{
 		temp = s[i];
 		s[i] = s[j];
 		s[j] = temp;
 	}
+}
+/**
+ * _strlen - return length of string
+ * @s: pointer
+ * Return: length (int)
+ */
+int _strlen(char *s)
+{
+	int count;
+
+	for (count = 0; s[count] != '\0'; count++)
+		;
+	return (count);
 }
