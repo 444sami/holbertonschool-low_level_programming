@@ -1,2 +1,1 @@
-C - Hello World
-to update
+Low level programming repository for Holberton School, UY
